@@ -1,0 +1,19 @@
+﻿A program működése
+
+A program kiszámolja egy háromszög kerületét és területét
+
+ - a program bekéri egy háromszög oldalainak értékét
+
+ - majd megvizsgálja, hogy a háromszög derékszögű-e
+
+ - a felhasználónak meg kell adnia, hogy szerinte derékszögű-e a háromszög
+
+ - igen illetve nem válasz esetén a program magyarázatot ad
+
+ - majd kérdést tesz fel a felhasználónak a kerület mértékere vonatkozóan
+
+ - helyes és helytelen válasz esetén is kiszámítja a kerületet
+
+ - megkérdezi a program a felhasználót, hogy mekkora a terület
+
+ - helyes és helytelen válasz esetén is kiszámítja a területet
