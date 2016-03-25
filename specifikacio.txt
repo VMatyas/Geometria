@@ -1,0 +1,19 @@
+﻿A program működése
+
+A program generáljon 3 db  1-50 közé eső véletlen számot. A generalás kritériuma, hogy lehessen belőle háromszöget szerkeszteni.
+
+A program számolja ki háromszög kerületét és területét, és állapítsa meg, hogy a háromszög derékszögű-e.
+
+Készítsen a háromszöghöz kapcsolódóan tesztet:
+ 
+1. a felhasználónak meg kell adnia, hogy szerinte derékszögű-e a háromszög
+	- igen illetve nem válasz esetén a program magyarázatot ad
+2. kérdést tesz fel a felhasználónak a kerület mértékere vonatkozóan
+	- helyes és helytelen válasz esetén is kiszámítja a kerületet
+3. megkérdezi a program a felhasználót, hogy mekkora a terület
+	- helyes és helytelen válasz esetén is kiszámítja a területet
+
+Továbbfejlesztési lehetőség:
+- a három számból kettőt kiválasztva készítsen négyszöget és ahhoz is készítsen kérdéseket
+- grafikus felület tervezése a programhoz
+- az alakzatok kirajzoltatása a programmal
