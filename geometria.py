@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Mar 25 12:10:35 2016
-
-@author: Gabor
-"""
-
 import random
 
 oldalak = list()
