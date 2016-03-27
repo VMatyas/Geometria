@@ -18,3 +18,19 @@ oldalak.append (random.randrange(intervall_also,intervall_felso))
 #else:
 #    print ('megszekeszthető')
 print('Legyenek egy háromszög oldalai, a = {0} cm, b={1} cm és c = {2} cm.'.format(oldalak[0], oldalak[1], oldalak[2]))
+
+def kerulet():
+    ker=0
+    for i in range(3):
+        ker+=oldalak[i]
+    return ker
+    
+def terulet():
+    s=0
+    for i in range(3):
+        s+=oldalak[i]
+    s=s/2
+    return math.sqrt(s*(s-oldalak[0])*(s-oldalak[1])*(s-oldalak[2]))        
+     
+    ter=0
+    return ter
