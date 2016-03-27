@@ -31,6 +31,5 @@ def terulet():
         s+=oldalak[i]
     s=s/2
     return math.sqrt(s*(s-oldalak[0])*(s-oldalak[1])*(s-oldalak[2]))        
-     
     ter=0
     return ter
