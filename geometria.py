@@ -1,4 +1,5 @@
 import random
+import math
 
 oldalak = list()
 oldalak.append(random.randrange(1,50))
@@ -18,14 +19,14 @@ oldalak.append (random.randrange(intervall_also,intervall_felso))
 #else:
 #    print ('megszekeszthető')
 print('Legyenek egy háromszög oldalai, a = {0} cm, b={1} cm és c = {2} cm.'.format(oldalak[0], oldalak[1], oldalak[2]))
-
-def kerulet():
+#haromszog
+def h_kerulet():
     ker=0
     for i in range(3):
         ker+=oldalak[i]
     return ker
     
-def terulet():
+def h_terulet():
     s=0
     for i in range(3):
         s+=oldalak[i]
@@ -33,3 +34,15 @@ def terulet():
     return math.sqrt(s*(s-oldalak[0])*(s-oldalak[1])*(s-oldalak[2]))        
     ter=0
     return ter
+#téglalap
+def t_kerulet():
+    t_ker=2*oldalak[0]+2*oldalak[1]
+    return t_ker
+    
+def t_terulet():
+    t_ter=oldalak[0]*oldalak[1]
+    return t_ter
+print ('Háromszög kerület: {0:.2f}'.format(h_kerulet()))
+print ('Háromszög terület: {0:.2f}'.format (h_terulet()))    
+print ('Téglalap kerület: {0:.2f}'.format(t_kerulet()))
+print ('Téglalap terület: {0:.2f}'.format (t_terulet()))
