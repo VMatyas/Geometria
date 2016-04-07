@@ -15,9 +15,9 @@ oldalak.append (random.randrange(intervall_also,intervall_felso))
 #print ('alsó határ {0}'.format(intervall_also))
 #print ('felső határ {0}'. format(intervall_felso))
 #if oldalak[0]>oldalak[1]+oldalak[2] or oldalak[1]>oldalak[0]+oldalak[2] or oldalak[2]>oldalak[0]+oldalak[1]:
-#    print (' nem megszekeszthető')
+#    print (' nem megszerkeszthető')
 #else:
-#    print ('megszekeszthető')
+#    print ('megszerkeszthető')
 print('Legyenek egy háromszög oldalai, a = {0} cm, b={1} cm és c = {2} cm.'.format(oldalak[0], oldalak[1], oldalak[2]))
 #haromszog
 def h_kerulet():
@@ -42,7 +42,18 @@ def t_kerulet():
 def t_terulet():
     t_ter=oldalak[0]*oldalak[1]
     return t_ter
-print ('Háromszög kerület: {0:.2f}'.format(h_kerulet()))
-print ('Háromszög terület: {0:.2f}'.format (h_terulet()))    
-print ('Téglalap kerület: {0:.2f}'.format(t_kerulet()))
-print ('Téglalap terület: {0:.2f}'.format (t_terulet()))
+#négyzet
+def n_kerulet():
+    n_ker=4*oldalak[0]
+    return n_ker
+    
+def n_terulet():
+    n_ter=math.sqrt (oldalak[0])
+    return t_ter
+    
+print ('Háromszög kerülete: {0:.2f}'.format(h_kerulet()))
+print ('Háromszög területe: {0:.2f}'.format (h_terulet()))    
+print ('Téglalap kerülete: {0:.2f}'.format(t_kerulet()))
+print ('Téglalap területe: {0:.2f}'.format (t_terulet()))
+print ('Négyzet kerülete: {0:.2f}'.format (n_kerulet()))
+print ('Négyzet területe: {0:.2f}'.format (n_terulet()))
