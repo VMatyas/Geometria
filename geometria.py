@@ -20,7 +20,6 @@ oldalak.append (random.randrange(intervall_also,intervall_felso))
 #    print (' nem megszekeszthető')
 #else:
 #    print ('megszekeszthető')
-
 milyenalakzat = input('Háromszöget (H), vagy négyszöget (N) választ? (Kilépés:Q) ' )
 while (milyenalakzat!='H' or milyenalakzat!='N'):
     milyenalakzat = input('Háromszöget (H), vagy négyszöget (N) választ?  (Kilépés:Q) ' )
