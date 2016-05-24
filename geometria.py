@@ -28,10 +28,10 @@ while (milyenalakzat!='H' or milyenalakzat!='N'):
         print('Legyenek egy háromszög oldalai, a = {0} cm, b={1} cm és c = {2} cm.'.format(oldalak[0], oldalak[1], oldalak[2]))
         #haromszog
         def h_kerulet():
-            ker=0
+            h_ker=0
             for i in range(3):
-                ker+=oldalak[i]
-                return ker
+                h_ker+=oldalak[i]
+            return h_ker
     
         def h_terulet():
             s=0
@@ -39,11 +39,40 @@ while (milyenalakzat!='H' or milyenalakzat!='N'):
                 s+=oldalak[i]
             s=s/2
             return math.sqrt(s*(s-oldalak[0])*(s-oldalak[1])*(s-oldalak[2]))        
-            ter=0
-            return ter
+            h_ter=0
+            return h_ter
+
+        ellenorzo_kerulet = h_kerulet()
+        haromszoge = input('A fenti adatokból kirajzolható alakzat egyenlőszárú (E), vagy nem egyenlőszárú (N) lehet? ')
+        if haromszoge=='E' and oldalak[0]==oldalak[1]:
+            print ('Helyes válasz, az alakzat tényleg egyenlő szárú háromszög!')
+            helyes=helyes+1
+        elif haromszoge=='E' and oldalak[0]!=oldalak[1]:
+            print ('Helytelen válasz, az alakzat nem egyenlő szárú háromszög!')
+        elif haromszoge=='N' and oldalak[0]!=oldalak[1]:
+            print ('Helyes válasz, az alakzat nem egyenlő szárú háromszög!')
+            helyes=helyes+1
+        elif haromszoge=='N' and oldalak[0]==oldalak[1]:
+            print ('Helytelen válasz, az alakzat egyenlő szárú háromszög!')
+            
+        kiszamolt_kerulet = int(input('Hány cm a háromszög kerülete? '))
+        if kiszamolt_kerulet == h_kerulet() :
+            print ('Helyes válasz, a háromszög kerülete valóban {0:.2f} cm.'.format(h_kerulet()))
+            helyes=helyes+1
+        else:
+            print ('Sajnos a válasz helytelen, a háromszög kerülete {0:.2f} cm.'.format(h_kerulet()))
+
+        kiszamolt_terulet = input('Hány cm^2 a háromszög területe? ')
+        if kiszamolt_terulet==h_terulet():
+            print ('Helyes válasz, a háromszög területe valóban {0:.2f} cm^2.'.format(h_terulet()))
+            helyes=helyes+1
+        else:
+            print ('Sajnos a válasz helytelen, a háromszög területe {0:.2f} cm^2.'.format(h_terulet()))
 
         print ('Háromszög kerület: {0:.2f}'.format(h_kerulet()))
-        print ('Háromszög terület: {0:.2f}'.format (h_terulet()))           
+        print ('Háromszög terület: {0:.2f}'.format (h_terulet()))
+        print ('Helyes válaszok száma: {0}'.format(helyes))
+           
     elif milyenalakzat == 'N':
         #téglalap
         print('Legyenek egy négyszög oldalai, a = {0} cm, b = {1} cm.'.format(oldalak[0], oldalak[1]))
